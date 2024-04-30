@@ -1,0 +1,185 @@
+/* Color Css */
+html input[type="color"]{
+  border: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 500px;
+}
+html input[type="color"]::-webkit-color-swatch{
+  border-radius: 500px;
+  box-shadow: none;
+  border: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+/* Range Css */
+html input[type="range"]{
+    outline: 0;
+    border: 0;
+    border-radius: 500px;
+    width: 100%;
+    max-width: 100%;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    html input[type="range"] {
+      overflow: hidden;
+      height: 20px;
+      -webkit-appearance: none;
+      background-color: #ddd;
+    }
+    html input[type="range"]::-webkit-slider-runnable-track {
+      height: 20px;
+      -webkit-appearance: none;
+      color: #444;
+      transition: box-shadow 0.2s ease-in-out;
+    }
+    html input[type="range"]::-webkit-slider-thumb {
+      width: 20px;
+      -webkit-appearance: none;
+      height: 20px;
+      cursor: pointer;
+      background: #fff;
+      box-shadow: -340px 0 0 330px #1abc9c, inset 0 0 0 2px #1abc9c;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+      position: relative;
+    }
+    html input[type="range"]:active::-webkit-slider-thumb {
+      box-shadow: -340px 0 0 330px #1abc9c, inset 0 0 0 3px #1abc9c;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: #34495e;
+    display: grid;
+    align-items: flex-start;
+    align-content: flex-start;
+    grid-gap: 50px 0px;
+    overflow-y: auto;
+    padding: 40px 20px;
+}
+[codeParentBox]{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-gap: 50px 0px;
+    width: 600px;
+    margin: auto;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.096);
+    padding: 40px;
+    border-radius: 10px;
+}
+[codeParentBox] > h1{
+  text-align: center;
+}
+[rangeBox]{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-gap: 20px 0px;
+}
+[rangeBox] > div{
+    display: grid;
+    grid-gap: 10px 0px;
+}
+/* displayBox */
+[inner__main]{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin: auto;
+}
+[displayBox]{
+  width: 600px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid white;
+  margin: auto;
+  transform: rotate(5deg);
+
+/* Range */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+[bgText]{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* codeBox */
+[codeBox]{
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-gap: 5px 0px;
+}
+[codeBox] textarea{
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+  padding: 20px;
+  height: 170px;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: none;
+}
+[copy__css]{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  margin: 10px 0px;
+}
+[copy__css]:active{
+  background: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 768px){
+  [codeParentBox]{
+    width: 100% !important;
+  }
+  [displayBox]{
+    width: 100% !important;
+  }
+}

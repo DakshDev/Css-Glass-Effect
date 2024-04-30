@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div id="main">
+        <div inner__main>
+            <div displayBox></div>
+            <div bgText>CSS Glass Effect Generator</div>
+        </div>
+        <div codeParentBox>
+            <h1>CSS Glass Effect</h1>
+            <div rangeBox>
+                <div>
+                    <span>TRANSPARENCY</span>
+                    <input type="range" value="40" transparency__range>
+                </div>
+                <div>
+                    <span>RADIUS</span>
+                    <input type="range" value="40" radius__range>
+                </div>
+                <div>
+                    <span>BLUR</span>
+                    <input type="range" value="40" blur__range>
+                </div>
+                <div>
+                    <span>COLOR</span>
+                    <input type="color" color__bar>
+                </div>
+                <div>
+                    <span>OUTLINE</span>
+                    <input type="range" value="40" outline__range>
+                </div>
+            </div>
+
+            <div>
+                <div codeBox><textarea cols="30" rows="10"></textarea></div>
+                <div><span copy__css onclick="copyCode()">Copy CSS Code</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
